@@ -1,0 +1,22 @@
+.person {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: var(--shadow-3);
+    display: block;
+    object-fit: cover;
+  }
+  h4 {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    color: var(--grey-500);
+  }
+}

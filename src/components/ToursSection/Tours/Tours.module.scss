@@ -1,0 +1,114 @@
+.tours {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.singleTour {
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  /* for tour price */
+  position: relative;
+  width: calc((100% - 30px) / 3);
+  margin-right: 15px;
+  margin-bottom: 15px;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+.singleTour:hover {
+  box-shadow: var(--shadow-3);
+}
+.singleTour .img {
+  height: 20rem;
+  border-top-right-radius: var(--borderRadius);
+  border-top-left-radius: var(--borderRadius);
+}
+.tourPrice {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  color: var(--white);
+  letter-spacing: 2px;
+  background: var(--primary-500);
+  // background: $mc2;
+  border-top-right-radius: var(--borderRadius);
+}
+
+.tourInfo {
+  padding: 2rem 1.5rem;
+}
+.tourInfo h5 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  min-height: 60px;
+}
+.tourInfo p {
+  line-height: 1.5;
+  color: var(--grey-500);
+  margin-bottom: 1.25rem;
+}
+.infoBtn,
+.deleteBtn {
+  background: transparent;
+  border: transparent;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.infoBtn {
+  color: var(--primary-500);
+  font-weight: 600;
+}
+.deleteBtn {
+  border: 1px solid var(--primary-500);
+  color: var(--primary-500);
+}
+.deleteBtn:hover {
+  background: var(--primary-500);
+  color: var(--white);
+}
+
+.btn {
+  cursor: pointer;
+  color: var(--white);
+  background: var(--primary-500);
+  border: transparent;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.375rem 0.75rem;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  text-transform: capitalize;
+  display: inline-block;
+}
+.btn:hover {
+  background: var(--primary-700);
+  box-shadow: var(--shadow-3);
+}
+.btnHipster {
+  color: var(--primary-500);
+  background: var(--primary-200);
+}
+.btnHipster:hover {
+  color: var(--primary-200);
+  background: var(--primary-700);
+}
+.btnBlock {
+  width: 100%;
+}
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.titleUnderline {
+  background: var(--primary-500);
+  width: 7rem;
+  height: 0.25rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
