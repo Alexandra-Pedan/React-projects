@@ -1,4 +1,5 @@
+import s from './Loading.module.scss'
 const Loading = () => {
-  return <div className="loading"></div>
+  return <div className={s.loading}></div>
 }
 export default Loading
